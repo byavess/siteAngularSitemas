@@ -1,38 +1,49 @@
 .header-container {
   background-color: #000000;
   width: 100%;
-  padding: 15px 5%;
+  padding: 10px 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-sizing: border-box;
 }
 
 .header-content {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
+/* LOGO E TÍTULO */
 .brand {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 8px;
+  flex-shrink: 1;
+  min-width: 0; /* Impede o título de empurrar o layout para fora da tela */
 }
 
 .brand-logo {
-  height: 45px;
+  height: 32px;
   width: auto;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .brand-title {
-  font-size: 1.35rem;
+  font-size: clamp(0.75rem, 2.8vw, 1.25rem);
   font-weight: 900;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
   font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .text-white {
@@ -43,38 +54,77 @@
   color: #00ff88;
 }
 
+/* NAVEGAÇÃO DESKTOP */
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  flex-shrink: 0;
 }
 
 .nav-link {
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   letter-spacing: 0.5px;
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
   color: #00ff88;
 }
 
+/* BOTÃO CONSULTORIA */
 .btn-consultoria {
   background-color: #00ff88;
   color: #000000;
   text-decoration: none;
   font-weight: 900;
-  font-size: 0.9rem;
-  padding: 10px 24px;
-  border-radius: 25px;
-  letter-spacing: 0.5px;
+  font-size: 0.75rem;
+  padding: 8px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .btn-consultoria:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0, 255, 136, 0.4);
+}
+
+/* ==========================================
+   RESPONSIVIDADE MOBILE
+   ========================================== */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 8px 12px;
+  }
+
+  .nav-link {
+    display: none; /* Oculta links institucionais no celular para economizar espaço */
+  }
+
+  .brand-logo {
+    height: 28px;
+  }
+
+  .btn-consultoria {
+    font-size: 0.7rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-title {
+    font-size: 0.7rem;
+  }
+
+  .btn-consultoria {
+    font-size: 0.65rem;
+    padding: 5px 8px;
+  }
 }

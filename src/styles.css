@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+/* Reset CSS Global para eliminar bordas brancas em celulares */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #0f172a; /* Cor de fundo escura nativa */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
