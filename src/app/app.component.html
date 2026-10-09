@@ -1,0 +1,62 @@
+
+<app-header />
+<!-- HERO SECTION -->
+<section class="hero-container">
+  <div class="hero-overlay">
+    <h1 class="hero-title">Engenharia de Software de Elite no Coração do Brasil.</h1>
+  </div>
+</section>
+
+<!-- SOLUTIONS SECTION -->
+<section class="solutions-section">
+  <div class="container">
+    <h2 id="solucoes" class="section-title">Nossas Soluções</h2>
+    
+    <div class="solutions-grid">
+      @for (item of solutions; track item.id) {
+        <article class="solution-card">
+          <img [src]="item.imageUrl" [alt]="item.imageAlt" class="card-image" loading="lazy" />
+          <h3 class="card-title">{{ item.title }}</h3>
+          <p class="card-description">{{ item.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+  <div class="container about-wrapper">
+    <div class="about-text">
+      <h2 id="empresa" class="about-title">De Sommelier a Arquiteto de Software</h2>
+      <p>
+        Nos últimos 15 anos, Brasília me conheceu pela excelência no atendimento e gestão no setor de hospitalidade. Nos últimos 8 anos, essa busca pela perfeição migrou para os circuitos da eletrônica e para a engenharia de código.
+      </p>
+      <p>
+        Hoje, a <strong>Sites &amp; Sistemas</strong> une o atendimento de elite com a robustez do Java e a agilidade do Angular. Não entregamos apenas código; entregamos a organização que seu negócio merece.
+      </p>
+    </div>
+
+    <figure class="about-figure">
+      <img
+        class="about-image"
+        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80"
+        alt="Arquiteto de Software e Automação"
+        loading="lazy"
+      />
+    </figure>
+  </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="footer-container">
+  <div class="footer-content">
+    <p class="brand-title"><strong>SITES &amp; SISTEMAS</strong></p>
+    <p class="copyright">
+      © 2026 Sites &amp; Sistemas Brasília. Tecnologia Local de Alta Performance. Organiza e Alavanca seu Negócio!
+    </p>
+    <p class="contact-info">
+      📍 Santa Maria, DF | 📧 sitesistemas&#64;gmail.com | 📱 (61) 98265-1431
+    </p>
+  </div>
+</footer>

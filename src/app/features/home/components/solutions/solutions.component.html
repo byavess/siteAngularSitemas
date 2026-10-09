@@ -1,0 +1,15 @@
+<section class="solutions-section">
+  <div class="container">
+    <h2 id="solucoes" class="section-title">Nossas Soluções</h2>
+    
+    <div class="solutions-grid">
+      @for (item of solutions(); track item.id) {
+        <article class="solution-card">
+          <img [src]="item.imageUrl" [alt]="item.imageAlt" class="card-image" loading="lazy" />
+          <h3 class="card-title">{{ item.title }}</h3>
+          <p class="card-description">{{ item.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

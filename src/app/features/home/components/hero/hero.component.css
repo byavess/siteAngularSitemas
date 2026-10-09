@@ -1,0 +1,19 @@
+.hero-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10%;
+  background: linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.7)),
+              url('https://sitesistemas.com.br/wp-content/uploads/2026/03/Gemini_Generated_Image_bw2r5ybw2r5ybw2r-2.png') no-repeat center bottom / cover;
+}
+
+.hero-title {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(1.85rem, 4.5vw, 3.35rem);
+  font-weight: 900;
+  line-height: 1.1;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}

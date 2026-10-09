@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+/* HERO */
+.hero-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10%;
+  background: linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.7)),
+              url('https://sitesistemas.com.br/wp-content/uploads/2026/03/Gemini_Generated_Image_bw2r5ybw2r5ybw2r-2.png') no-repeat center bottom / cover;
+}
+
+.hero-title {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(1.85rem, 4.5vw, 3.35rem);
+  font-weight: 900;
+  line-height: 1.1;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+/* SOLUÇÕES */
+.solutions-section {
+  background-color: #ffffff;
+  padding: 80px 5%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #0f172a;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.solution-card {
+  padding: 30px;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  background: #f8fafc;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.card-description {
+  text-align: left;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* SOBRE */
+.about-section {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 80px 5%;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-title {
+  font-size: 2rem;
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.about-text strong {
+  color: #ffffff;
+}
+
+.about-figure {
+  flex: 1;
+  min-width: 300px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  max-width: 100%;
+  width: 491px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 40px;
+}
+
+/* RODAPÉ */
+.footer-container {
+  background-color: #000000;
+  border-top: 1px solid #1e293b;
+  padding: 40px 10%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.brand-title {
+  font-size: 1.25rem;
+  color: #f8fafc;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.contact-info {
+  margin: 0;
+}
