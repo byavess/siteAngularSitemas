@@ -26,7 +26,7 @@ export const SOLUTIONS_DATA: Solution[] = [
     id: 'power-bi',
     title: 'Foco em Monitoramento e Grande Volume de Dados',
     description: 'Gestão e análise para grandes volumes de dados. Unimos Power BI e Zabbix para transformar métricas complexas em dashboards claros, automáticos e viabilizar tomadas de decisão em tempo real.',
-    imageUrl: 'assets/images/power.png',
+    imageUrl: 'assets/images/monitoramento.png',
     imageAlt: 'Dashboard futurista de Power BI'
   },
   {
